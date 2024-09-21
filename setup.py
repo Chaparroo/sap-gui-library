@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="sap-gui-library",  
-    version="0.1.0",
+    version="0.1.1",
     description="Facilitating interaction with the SAP GUI system",
     long_description=open("README.md", "r").read(), 
     long_description_content_type="text/markdown",  
@@ -19,5 +19,4 @@ setup(
         "six==1.16.0",
         "tzdata==2024.1",
     ],
-    #python_requires=">=3.11.8",
 )
