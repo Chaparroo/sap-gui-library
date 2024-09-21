@@ -19,5 +19,5 @@ setup(
         "six==1.16.0",
         "tzdata==2024.1",
     ],
-    python_requires=">=3.11.8",
+    #python_requires=">=3.11.8",
 )

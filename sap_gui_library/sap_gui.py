@@ -25,6 +25,7 @@ import pandas as pd
 # Importing os to interact with the operating system, such as file and directory handling
 import os
 
+# Numerical computing with Python 
 import numpy as np
 
 
@@ -647,7 +648,7 @@ class DataProcess():
 			else:self.df = self.df.loc[:, select_columns]
 
 	def get_df(self):
-		"""retorna el dataframe para su uso"""
+		"""return df to use"""
 		return self.df
 		
 	def save_file(self,address,name,like:Literal["Excel","csv"]="csv",index=False):
@@ -691,7 +692,6 @@ class DataProcess():
 		
 		except: return x  
 		
-
 	@staticmethod
 	def to_int(x):
 		try:

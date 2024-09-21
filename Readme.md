@@ -32,7 +32,7 @@ pip list
 
 python.exe -m pip install --upgrade pip
 
-pip install sapgui
+pip install sap-gui-library
 ```
 
 The second step is to use the following command if you see the library all is ok
@@ -41,7 +41,7 @@ The second step is to use the following command if you see the library all is ok
 pip list
 
 >> ...
->> sapgui   version
+>> sap-gui-library   version
 >> ...
 ```
 
@@ -49,11 +49,11 @@ You are ready to use sap library, in your proyects
 
 ## Use
 
-The following example demonstrates the most basic and simple usage of this project. For more detailed documentation, please visit [this link](https://#).
+The following example demonstrates the most basic and simple usage of this project. For more detailed documentation, please visit [sap_gui_library documentation](https://github.com/Chaparroo/sap-gui-library/tree/master/docs).
 
 
 ```python
-from sapgui import SapGui,Transaction,DataProcess
+from sap_gui_library import SapGui,Transaction,DataProcess
 ```
 
 - ### How open sap?
@@ -125,14 +125,24 @@ The following recommendations are for interacting with SAP in Python development
     To interact with SAP in a more fluid and simple way, there are several settings that should be adjusted beforehand:
 
     - In the options tab:
+        - option 1
+        <img alt="Source: SAP Help Portal, SAP Business One documentation" title="Accessing options" src="https://help.sap.com/doc/63bd20104af84112973ad59590645513/800.08/en-US/loio731c5ff4610441c2ada36826814cb79a_LowRes.png" >
 
-        <img title="Accessing options" src="https://community.sap.com/t5/image/serverpage/image-id/102197i93FADCDA1D62E205/" height=200>
+            <img alt="Source: SAP Help Portal, SAP Business One documentation" title="Accessing options" src=" https://help.sap.com/doc/63bd20104af84112973ad59590645513/800.08/en-US/loio3f85028df9544adab53ceda6c5e457dd_LowRes.png" >
+
+       
+        - option 2
+        <img alt="Source: SAP Help Portal, SAP Business One documentation" title="Accessing options" src="https://help.sap.com/doc/63bd20104af84112973ad59590645513/800.08/en-US/loio52365e4463d94aa291f96a0e2e5cb98d_LowRes.png" >
+        
 
     - Under Accessibility and Scripting --> Scripting --> enable the "Enable scripting" option and disable the other three options so that you don't get notified every time a script runs.
 
-       <img title="Enable scripting" src="https://global.discourse-cdn.com/uipath/optimized/3X/d/4/d460ff2b3ad2dbc85dc10079e59ac05064939a4a_2_690x363.jpeg" height=150>
+       <img  alt="Source: SAP Help Portal, SAP Business One documentation" title="Enable scripting" src="https://help.sap.com/doc/63bd20104af84112973ad59590645513/800.08/en-US/loio6cc6d83860df4300992c8898a1e89a99_LowRes.png" height=150 >
 
-    Before going to the Accessibility tab and enabling the "Use accessibility mode" option, we need to change the SAP theme or visual style to "SAP Signature Theme." Once this is done, you can go back to Accessibility and Scripting --> Accessibility --> and enable the "Use accessibility mode" option.
+    - Before going to the Accessibility tab and enabling the "Use accessibility mode" option, we need to change the SAP theme or visual style to "SAP Signature Theme." Once this is done, you can go back to Accessibility and Scripting --> Accessibility --> and enable the "Use accessibility mode" option.
+
+        <img alt="Source: SAP Help Portal, SAP Business One documentation" title="Use accessibility mode" src="https://help.sap.com/doc/63bd20104af84112973ad59590645513/800.08/en-US/loio8412c7f8ff4241c9ba44d63774a8faca_LowRes.png" height=150>
+    
 
 - ### SAPGUI Web API
 
@@ -177,8 +187,11 @@ Thank you for your interest in contributing to this project! Here's how you can 
 
 If you have any questions, suggestions, or feedback, feel free to contact us:
 
-- **Email:** [Send email](mailto:felipelopezchaparro@gmail.com)
+
 - **LinkedIn:** [Felipe Lopez](https://www.linkedin.com/in/lopez-chaparro/)
-- **GitHub Issues:** Please report issues or feature requests [here](https://github.com/Chaparroo)
+- **GitHub Issues:** Please report issues or feature requests [here](https://github.com/Chaparroo/sap-gui-library/issues)
+
+
+
 
 
