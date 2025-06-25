@@ -110,11 +110,18 @@ class SapGui():
 
 			alert=1
 			while int(self.session.Children.Count)>1:
-				#print(alert)
+				sleep(rest_time)
 				title_alert=self.session.Children.Item(alert).Text
+				
+				#windows of information
+				if title_alert == "Información" or title_alert == "Information":
+					self.session.findById("wnd[1]/tbar[0]/btn[0]").Press()
 
+				#windows of copyright
 				if title_alert=="Copyright":
 					self.session.findById("wnd[1]/tbar[0]/btn[0]").Press()
+				
+				#windows of multiple sessions
 				elif "License" in title_alert or "licencia" in title_alert:
 					radio_buttons={
 						"1":"wnd[1]/usr/radMULTI_LOGON_OPT1",
@@ -127,7 +134,6 @@ class SapGui():
 							if self.session.findById(value, False) is not None:
 								self.session.findById(value, False).Select()
 								self.session.findById("wnd[1]/tbar[0]/btn[0]").press()
-				alert+=1
 
 	def get_session(self):
 		"""Returns the current SAP session"""
@@ -695,7 +701,7 @@ class DataProcess():
 	@staticmethod
 	def to_int(x):
 		try:
-			if pd.isna(x) or x==None or x in [np.NaN,np.nan,np.NAN]:return pd.NA
+			if pd.isna(x) or x==None or x == np.nan :return pd.NA
 			x = (str(x).strip()).replace(",", "")
 			if x[-1] == '-': negative = True
 			else: negative = False 
