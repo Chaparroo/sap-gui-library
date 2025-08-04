@@ -220,6 +220,7 @@ class Transaction:
 					variante = variant_list.GetCellValue(i, "VARIANT")
 					if variante == variant_name:
 						variant_list.selectedRows = f"{i}"
+						variant_list.currentCellRow = f"{i}"
 						variant_list.doubleClickCurrentCell()
 						break
 				except:
